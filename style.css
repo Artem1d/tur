@@ -1,0 +1,501 @@
+body{
+font-family:"PT Sans" ;
+font-style: normal;
+font-size: 16px;
+line-height: 1.2;
+font-weight: normal;
+color: rgb(0, 0, 0);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* Header styles start */
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 30px;
+}
+.logo{
+   color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    
+}
+
+.header_wraper{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-end; */
+    /* justify-content: space-between; */
+    /* padding-top: 76px;  */
+}
+.header__nav{
+    
+    font-size: 18px;
+    text-transform: uppercase;
+   
+   
+}
+.header__list{
+    text-align: center; 
+    display: flex;
+    padding: 0px;
+    flex-wrap: wrap;
+   
+}
+
+.header__link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .1s linear ;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+}
+.header__link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+
+    background-color: rgb(25, 125, 165);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: .1 linear;
+}
+.header__link:hover::after{
+    display: block;
+    opacity: 1;
+}
+.header__link:hover {
+    color: rgb(25, 125, 165);
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+opacity: .75;
+}
+
+
+/* Header styles end */
+
+/* intro styles start */
+
+.intro{
+    height: 960px;
+    background: url(img/fon9.jpg);
+    background-size: cover;
+    padding-top: 263px;
+    
+}   
+.intro__title{
+    font-family: PT Sans;
+    /* max-width: 619px; */
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 90px;
+    color: white;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.intro__subtitle{
+    font-family:"PT Sans";
+    /* max-width: 546px; */
+    color: white;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center  ;
+}
+
+/* intro styles end */
+
+/* benefits styles start */
+.main{
+   
+   background-size: cover;
+   width: 100%;
+}
+.benefits{
+    
+    margin-bottom: 131px;
+}
+.benefits__wrap{
+    max-width: 1262px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(19, 50, 71, 0.184);
+    position: relative;
+    margin-top: 50px;
+}
+.benefits__title{
+    
+    width: 100%;
+    font-weight: 100;
+    color: rgb(70, 70, 78);
+    font-size: 40px;
+    line-height: 42px;
+    padding: 73px 100px 68px 100px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.benefits__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:95px ;
+    top:auto;
+    transform: translateY(-20%);
+    padding: 30px 100px;
+    
+
+}
+.benefits__card{
+    grid-column: span 1;
+}
+.benefits__card-pic{
+    margin-left: 110px;
+    max-width: 66px;
+    margin-bottom: 37px;
+}
+.benefits__card-thumb{
+    display: block;
+}
+.benefits__card-desc{
+   text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.benefits__text{
+    text-align:left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* benefits styles end */
+
+/* content start */
+
+.content{
+    /* height: 100vh; */
+    background: url(img/fon12.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.services1{
+    margin-top: 30px;
+}
+.napoln{
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    color: rgb(70, 70, 78);
+    font-size: 40px;
+    line-height: 42px;
+    padding: 93px 100px 28px 100px;
+    
+    top: 0;
+    left: 0;
+    
+    /* background-color: rgb(255, 255, 255); */
+}
+.content__turs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:95px ;
+    padding: 43px 100px 28px 100px;
+}
+.content__tur-pic{
+    /* margin-left: 110px; */
+    /* max-width: 200px; */
+    margin-bottom: 17px;
+    
+}
+.content__tur-title{
+    text-align:center;
+    margin-bottom: 17px;
+    width: 100%;
+    font-weight: 100;
+    color: rgb(70, 70, 78);
+    font-size: 27px;
+    line-height: 42px;
+}
+.content__tur-desc{
+    color: rgb(70, 70, 78);
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.services1{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:95px ; */
+     max-width: 1462px;
+    background-color: #fff;
+    margin: 0 auto;
+    
+    margin-top: 30px;
+    height: 700px;
+}
+/* content end */
+
+.contentt{
+    /* background: url(/img/fon4.jpg); */
+    background-size: cover;
+    padding-top: 0.2px;
+}
+
+.content__wrap{
+    max-width: 1262px;
+    background-color: #fff;
+    margin: 0 auto;
+    
+    margin-top: 30px;
+    height: 400px;
+}
+
+.content__title{
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    color: rgb(70, 70, 78);
+    font-size: 40px;
+    line-height: 42px;
+    padding: 43px 100px 28px 100px;
+    
+    top: 0;
+    left: 0;
+    
+    background-color: rgb(255, 255, 255);
+}
+.content__subtitle{
+    font-family:"PT Sans";
+    /* max-width: 546px; */
+    color: rgb(70, 70, 78);
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center  ;
+}
+.content__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:95px ;
+    /* margin-top:60px; */
+   
+    padding: 80px 60px;
+}
+.content__card{
+    grid-column: span 1;
+}
+.content__card-pic{
+    margin-left: 110px;
+    max-width: 66px;
+    margin-bottom: 37px;
+}
+.content__card-desc{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* form start */
+
+input{
+    height: 45px;
+    width: 100%;
+    color: #385983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+.form-title{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+}
+.register-form-container{
+    max-width: 415px;
+    background: #ffffff;
+    box-shadow: 0px 6px 50px rgb(217, 229, 255);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.form-field{
+    margin-bottom: 13px;
+}
+.button{
+    display: block;
+    height: 35px;
+    background: #247fff;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #0D6cf2;
+}
+a.button{
+    text-decoration: none;
+}
+
+/* form end */
+
+.titule__text{
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+    color: rgb(70, 70, 78);
+    font-size: 40px;
+    line-height: 42px;
+    padding: 93px 100px 28px 100px;
+    
+    top: 0;
+    left: 0;
+}
+.inform{
+    /* background: url(/img/fon12.jpg); */
+    background-size: cover;
+    height: 800px;
+}
+.services2{
+    margin-top: 30px;
+    max-width: 1462px;
+    background-color: #fff;
+    margin: 0 auto;
+    
+    margin-top: 30px;
+    height: 700px;
+}
+
+.content__tursq{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:95px ;
+    padding: 43px 100px 28px 100px;
+}
+.content__tur-picq{
+    /* margin-left: 110px; */
+    /* max-width: 200px; */
+    margin-bottom: 17px;
+    padding: 13px 0px 28px 0px;
+    width: 350px;
+}
+.round {
+    max-width: 170px;
+    margin-left: 90px;
+    border-radius: 400px; /* Радиус скругления */
+    border: 3px solid rgb(6, 100, 140); /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+   
+
+
+
+   
+   
+   @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;/*обнуление отступов*/
+    padding: 0;/*обнуление полей*/
+    box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: 'Poppins', sans-serif;/*название шрифта*/
+}
+body {
+    display: flex;/*флексбокс сетка*/
+    flex-direction: column;/*направление главной оси*/
+    justify-content: flex-end;/*элементы в конце контейнера*/
+    min-height: 100vh;
+}
+footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    background: #3586ff;
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);/*картинка волны*/
+    background-size: 1000px 100px;/*ширина и высота волны*/
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}    
